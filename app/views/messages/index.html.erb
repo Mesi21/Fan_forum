@@ -1,0 +1,10 @@
+<% @messages.each do |msg| %>
+    <div class="col-md-10 col-md-offset-1">
+        <div class="message">
+            <h2 class="message-title"><%= msg.title %></h2>
+            <%= link_to "Join conversation", msg, class: "btn-custom" %>
+        </div>
+    <div>
+<% end %>
+
+<%= link_to "Post", new_message_path %>
